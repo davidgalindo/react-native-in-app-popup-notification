@@ -9,6 +9,7 @@
   "keywords": [
     "react-native", "popup", "notification", "window"
   ],
+  "homepage": "https://github.com/davidgalindo/react-native-in-app-popup-notification",
   "author": "David Galindo",
   "license": "MIT",
   "peerDependencies": {
