@@ -41,7 +41,6 @@ Make sure the InAppPopupNotification is the last component in your parent view.
 
 ## Props
 Note that none of these props are required.
-
 |Prop Name | Type | Description | Default|
 |------ | ----- | ----- | ----- |
 |title | String | The popup view's title. | 'Congratulations!'|
