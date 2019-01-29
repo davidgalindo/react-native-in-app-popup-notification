@@ -196,7 +196,7 @@ class InAppPopupNotification extends React.Component {
     };
 
     // MARK: API Methods - these will be visible to the user
-    displayNotification(parameters) {
+    displayPopup(parameters) {
         // Only one popup can be displayed at a time
         if (this.state.isAnimating || this.state.isVisible) {
             console.warn('Could not display popup because one is already being displayed.');
@@ -219,6 +219,8 @@ class InAppPopupNotification extends React.Component {
             console.warn('No popup to clear.');
         }
     }
+
+    isVisible = () => this.state.isVisible;
 
     // MARK: Styles
     _styles = {
@@ -295,7 +297,6 @@ class InAppPopupNotification extends React.Component {
         popupWillAppear: PropTypes.func,
         popupWillDisappear: PropTypes.func,
         // Misc.
-        isVisible: PropTypes.bool,
         useNativeDriver: PropTypes.bool,
     };
 
@@ -317,7 +318,6 @@ class InAppPopupNotification extends React.Component {
         popupDidDisappear: () => {},
         popupWillAppear: () => {},
         popupWillDisappear: () => {},
-        isVisible: false,
         useNativeDriver: false,
     };
 }

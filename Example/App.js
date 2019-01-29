@@ -19,7 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={ this.onNotificationClick }>
+        <TouchableOpacity onPress={ this.onPopupTrigger }>
           <Text style={styles.welcome}>Click to trigger!!</Text>
         </TouchableOpacity>
         <Text style={styles.instructions}>Clicking above should show an in app notification.</Text>
@@ -40,9 +40,9 @@ export default class App extends Component {
 
   };
 
-  onNotificationClick = () => {
+  onPopupTrigger = () => {
     if(this.refs.popup) {
-      this.refs.popup.displayNotification({
+      this.refs.popup.displayPopup({
         title: 'Boom!',
         message: 'Custom messages work!',
       });
