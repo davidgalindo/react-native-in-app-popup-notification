@@ -8,6 +8,5 @@ npm-debug.log
 
 # Images and extras
 .github/
-example/
 .eslintrc
 yarn.lock
